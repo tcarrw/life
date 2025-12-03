@@ -1,20 +1,37 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Exotic τ — Alternative Matter Transformations and the Possibility of Life</title>
-  <meta name="description" content="Exploring whether life can exist in matter transformations beyond carbon-based biochemistry, expressed through the τ framework with test protocols." />
+  <title>42 · τ-Life Precursors in Bennu & Beyond</title>
+  <meta name="description" content="Bennu samples show ribose, glucose, and space gum polymers—τ-life precursors delivered by asteroids. Where else could τ-life emerge?" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdjM2FlZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y1OWUwYiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2IiBmaWxsPSIjMGIwZjE5Ii8+PHRleHQgeD0iMTYiIHk9IjIxIiBmb250LXNpemU9IjE2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ1cmwoI2cpIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiPjQyPC90ZXh0Pjwvc3ZnPg==" />
 
   <style>
     :root{
-      --bg:#0b0f19;--panel:#121827;--ink:#e6e8ee;--muted:#a3acc2;
-      --accent:#7c3aed;--accent-2:#f59e0b;--rule:#2a3348;--code:#0e1422;
-      --link:#9aa8ff;--maxw:980px;
+      --bg:#0b0f19;
+      --panel:#121827;
+      --ink:#e6e8ee;
+      --muted:#a3acc2;
+      --accent:#7c3aed;
+      --accent-2:#f59e0b;
+      --rule:#2a3348;
+      --code:#0e1422;
+      --link:#9aa8ff;
+      --maxw:980px;
     }
     @media (prefers-color-scheme: light){
-      :root{--bg:#ffffff;--panel:#f6f7fb;--ink:#0f1222;--muted:#4a546e;
-        --rule:#e4e7f0;--code:#f1f3f9;--link:#2b59ff;}
+      :root{
+        --bg:#ffffff;
+        --panel:#f6f7fb;
+        --ink:#0f1222;
+        --muted:#4a546e;
+        --rule:#e4e7f0;
+        --code:#f1f3f9;
+        --link:#2b59ff;
+      }
     }
     *{box-sizing:border-box}
     body{
@@ -41,19 +58,14 @@
     h1{margin:0 0 8px;font-size:clamp(26px,4.5vw,38px);line-height:1.2}
     .subtitle{color:var(--muted);font-size:15px}
     .meta{margin-top:8px;color:var(--muted);font-size:14px}
-    nav{margin:26px auto;max-width:740px;text-align:left;background:var(--panel);
-      border:1px solid var(--rule);border-radius:12px;padding:16px 20px}
-    nav a{color:var(--link);text-decoration:none}
-    nav a:hover{text-decoration:underline}
-    nav ul{margin:0;padding-left:18px}
     section{background:rgba(255,255,255,.02);border:1px solid var(--rule);
-      border-radius:16px;padding:24px 20px;margin:18px 0}
+        border-radius:16px;padding:24px 20px;margin:18px 0}
     h2{margin:0 0 8px;font-size:clamp(20px,3.5vw,26px)}
     h3{margin:16px 0 8px;font-size:18px}
     p{margin:10px 0 0}
     .equation{display:block;margin:12px 0;padding:12px 14px;background:var(--code);
-      border:1px solid var(--rule);border-radius:10px;
-      font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;overflow:auto;white-space:nowrap}
+        border:1px solid var(--rule);border-radius:10px;
+        font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;overflow:auto;white-space:nowrap}
     .abstract{font-style:italic;color:var(--muted)}
     .callout{padding:14px;border:1px dashed var(--rule);border-radius:12px;background:rgba(245,158,11,.08)}
     footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
@@ -61,181 +73,231 @@
     th,td{border:1px solid var(--rule);padding:8px;vertical-align:top}
     th{background:var(--panel);text-align:left}
     code{background:var(--code);padding:1px 4px;border-radius:4px}
-    @media print{body{background:#fff}nav,section{break-inside:avoid}}
+    @media print{body{background:#fff}section{break-inside:avoid}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="logo">Exotic τ</div>
-      <h1>Exotic τ — Alternative Matter Transformations and the Possibility of Life</h1>
-      <div class="subtitle">Could τ-based life emerge from silicon, sulfur, plasma, or exotic states?</div>
-      <div class="meta">Author: Tristan White • v1.0 • Updated: Mon, Sep 1, 2025, 4:42 PM EDT</div>
-      <nav aria-label="Contents">
-        <ul>
-          <li><a href="#abstract">Abstract</a></li>
-          <li><a href="#introduction">1. Introduction</a></li>
-          <li><a href="#framework">2. τ Framework for Life</a></li>
-          <li><a href="#pathways">3. Alternative Matter Pathways</a></li>
-          <li><a href="#thresholds">4. Threshold Conditions</a></li>
-          <li><a href="#benchmarks">5. Candidate Worlds & Examples</a></li>
-          <li><a href="#implications">6. Implications</a></li>
-          <li><a href="#conclusion">7. Conclusion</a></li>
-          <li><a href="#references">References</a></li>
-          <li><a href="#appendix-a">Appendix A — τ-Life Dictionary</a></li>
-          <li><a href="#appendix-b">Appendix B — Test Protocols (Checklist)</a></li>
-        </ul>
-      </nav>
+      <div class="logo">42</div>
+      <h1>&tau;-Life Precursors in Bennu & Beyond</h1>
+      <div class="subtitle">Ribose, glucose, space gum polymers—delivered by asteroids. Where else could &tau;-life emerge?</div>
+      <div class="meta">2025-12-03 · By Tristan White</div>
     </header>
 
     <main>
       <section id="abstract"><h2>Abstract</h2>
         <p class="abstract">
-          We explore whether life could exist through matter transformations beyond terrestrial carbon–oxygen chemistry. In a τ framework (τ ≡ E/c³ ≡ m/c), “life” is sustained ordered τ flux, not bound to specific molecules. We survey silicon biochemistry, sulfur/metal redox cycles, ammonia or methane solvents, plasma-based life, and condensed-matter states. Threshold conditions for τ-life are proposed, and candidate test protocols for detection are outlined.
+          NASA's OSIRIS-REx mission returned samples from asteroid Bennu containing ribose, glucose, nitrogen-oxygen rich polymers ("space gum"), and 6× the supernova dust of any known astromaterial. These findings reveal that &tau;-life precursors—molecules capable of storing and cycling temporal charge—were widespread in the early solar system and delivered to Earth by asteroids. We propose that life, defined as sustained ordered &tau;-flux, could emerge wherever matter transformations support replication, metabolism, and evolution. Part 1 analyzes Bennu's samples through the &tau; framework. Part 2 explores where else &tau;-life might exist: silicon deserts, sulfur seas, plasma vortices, and exotic condensed-matter states.
         </p>
       </section>
 
-      <section id="introduction"><h2>1. Introduction</h2>
-        <p>
-          Earth life relies on carbon chains, water solvent, and oxygen respiration. But life defined as τ flux—ordered exchanges of matter and energy—could arise in other transformations if they support replication, metabolism, and evolution. This opens the door to exotic τ-life across planets, moons, and even stars.
-        </p>
-      </section>
+      <section id="part1"><h2>Part 1: Bennu Samples & &tau;-Life Precursors</h2>
+        
+        <h3>1.1 What Did Bennu Deliver?</h3>
+        <p>On December 2, 2025, NASA announced findings from asteroid Bennu samples:</p>
+        <ul>
+          <li><strong>Ribose</strong> (5-carbon sugar) — structural backbone of RNA</li>
+          <li><strong>Glucose</strong> (6-carbon sugar) — primary energy source for Earth life</li>
+          <li><strong>"Space gum"</strong> — nitrogen-oxygen rich polymers, never seen before in astromaterials</li>
+          <li><strong>Supernova dust</strong> — 6× higher abundance than any studied meteorite</li>
+        </ul>
+        <p>All five nucleobases (A, G, C, U, T), phosphates, amino acids, and now sugars have been found. <strong>Every component needed to build RNA exists in Bennu.</strong></p>
 
-      <section id="framework"><h2>2. τ Framework for Life</h2>
-        <div class="equation">τ = E/c³ = m/c</div>
-        <p>
-          Life requires:
-        </p>
+        <h3>1.2 The &tau; Framework for Life</h3>
+        <p>From <a href="https://time.plnt.earth" style="color:var(--link)">time.plnt.earth</a>, we define temporal charge:</p>
+        <div class="equation">&tau; = &hbar;/(mc&sup2;) = &hbar;/E</div>
+        <p>Life, in this framework, is <strong>sustained ordered &tau;-flux</strong>: organized exchanges of mass and energy that support:</p>
         <ol>
-          <li><strong>Sustained τ flux</strong> (energy/mass turnover from gradients)</li>
-          <li><strong>τ storage units</strong> (analogous to ATP, DNA, or charge states)</li>
-          <li><strong>τ replication</strong> (copying τ patterns across generations)</li>
+          <li><strong>&tau;-flux</strong> (continuous energy/mass cycling from gradients)</li>
+          <li><strong>&tau;-storage</strong> (molecules like ATP, glucose, ribose that hold temporal charge)</li>
+          <li><strong>&tau;-replication</strong> (copying &tau; patterns across generations via DNA/RNA)</li>
         </ol>
-        <p>
-          Any matter transformation that supports these three conditions could, in principle, host τ-life.
-        </p>
-      </section>
+        <p>Carbon-based life on Earth uses these three mechanisms. But <strong>&tau;-flux is substrate-independent</strong>—any matter transformation that supports these conditions could host life.</p>
 
-      <section id="pathways"><h2>3. Alternative Matter Pathways</h2>
-        <h3>3.1 Silicon-based biochemistry</h3>
-        <p>
-          Silicon can form four bonds like carbon, but prefers oxygen-rich compounds (e.g., SiO₂). In high-temperature or non-aqueous solvents, silicon chains could provide τ-cycling scaffolds.
-        </p>
-        <h3>3.2 Sulfur & metal redox life</h3>
-        <p>
-          Microbes on Earth already use sulfur, iron, and manganese. Entire τ biospheres may run on S⁰/S²⁻ or Fe²⁺/Fe³⁺ cycling, especially in subsurface oceans.
-        </p>
-        <h3>3.3 Ammonia/methane solvent life</h3>
-        <p>
-          Titan-like conditions: life may use nitrogen/hydrogen chemistry in methane solvents. τ flux is slower (lower temperatures) but chemically stable.
-        </p>
-        <h3>3.4 Plasma or ionized-matter life</h3>
-        <p>
-          In stars or ionospheres, self-organizing plasmoids could support τ-life with electromagnetic flows replacing molecular bonds.
-        </p>
-        <h3>3.5 Exotic condensed-matter life</h3>
-        <p>
-          Hypothetical life in superconducting lattices or Bose–Einstein condensates, where τ exchange occurs via quantum coherence rather than chemical reactions.
-        </p>
-      </section>
-
-      <section id="thresholds"><h2>4. Threshold Conditions</h2>
+        <h3>1.3 Bennu's Molecules as &tau;-Storage Units</h3>
+        <p><strong>Ribose</strong> stores temporal charge in RNA's sugar-phosphate backbone. RNA's structure allows it to:</p>
         <ul>
-          <li>Free-energy gradients sufficient for continuous τ flux</li>
-          <li>Medium that supports τ storage and transfer (solvents, fields, lattices)</li>
-          <li>Mechanism for replication and variation in τ structures</li>
+          <li>Store genetic information (&tau;-pattern encoding)</li>
+          <li>Catalyze reactions (&tau;-flux mediation)</li>
+          <li>Self-replicate (&tau;-pattern copying)</li>
         </ul>
-      </section>
+        <p><strong>Glucose</strong> is Earth life's primary &tau;-flux currency. Through glycolysis, cells extract &tau; from glucose and transfer it to ATP, which powers nearly all biological processes.</p>
+        <div class="equation">Glucose &rarr; ATP &equiv; &tau;-storage &rarr; &tau;-flux mediation</div>
 
-      <section id="benchmarks"><h2>5. Candidate Worlds & Examples</h2>
+        <h3>1.4 "Space Gum" as &tau;-Cycling Scaffold</h3>
+        <p>The nitrogen-oxygen rich polymers found in Bennu are remarkable because they formed <strong>before water</strong> entered the parent asteroid. This suggests:</p>
         <ul>
-          <li><strong>Titan:</strong> methane–ammonia solvent τ-life</li>
-          <li><strong>Europa/Enceladus:</strong> sulfur–metal redox τ-life in oceans</li>
-          <li><strong>Stars:</strong> plasma τ-life in electromagnetic vortices</li>
-          <li><strong>Exoplanets:</strong> silicon τ-life in hot, dry atmospheres</li>
+          <li>Carbamate (NH₂COOH) polymerized into larger chains</li>
+          <li>These polymers became water-resistant after formation</li>
+          <li>They represent <strong>pre-biological &tau;-cycling chemistry</strong></li>
         </ul>
-      </section>
+        <p>The "gum" is flexible, translucent, and becomes brittle under radiation—similar to biological polymers. It's not life, but it's a <strong>&tau;-flux substrate</strong>: a material that can store, transfer, and transform temporal charge through chemical reactions.</p>
 
-      <section id="implications"><h2>6. Implications</h2>
+        <h3>1.5 Supernova Dust & &tau;-Density</h3>
+        <p>Bennu contains <strong>6× more presolar dust</strong> than any known meteorite. This dust came from supernovae—dying stars that exploded before our solar system formed. Higher supernova dust abundance means:</p>
         <ul>
-          <li>τ-life expands “habitable zone” beyond liquid water worlds</li>
-          <li>Detection strategies should target τ flux, not just carbon signatures</li>
-          <li>Artificial systems may already approach τ-life if they maintain replication with τ balance</li>
+          <li>Higher initial <strong>&tau;-density</strong> (more mass-energy per unit volume)</li>
+          <li>More diverse elements (heavier elements forged in supernovae)</li>
+          <li>Potential for more complex chemistry</li>
         </ul>
+        <p>The regions of the protoplanetary disk enriched in stardust had higher &tau;-flux potential. If &tau;-flux drives chemical complexity, we'd expect <strong>more organized molecules in high-dust regions</strong>.</p>
+
+        <h3>1.6 Test Question for NASA</h3>
+        <p class="callout"><strong>For the OSIRIS-REx team:</strong> Do Bennu samples show correlation between supernova dust abundance and organic complexity (polymer chain length, sugar diversity, molecular weight distributions)? If higher &tau;-density regions → more organized chemistry, this would support the hypothesis that &tau;-flux, not random assembly, drives prebiotic molecular complexity.</p>
+        
+        <p><strong>Specific Test:</strong></p>
+        <ol>
+          <li>Measure presolar dust concentration in different Bennu grains</li>
+          <li>Measure organic molecular complexity in the same grains (polymer length, sugar ratios, nucleobase abundance)</li>
+          <li>Plot: [supernova dust abundance] vs [organic complexity index]</li>
+        </ol>
+        <p><strong>Prediction if &tau;-flux matters:</strong> Positive correlation—higher dust = more complex organics</p>
+        <p><strong>Prediction if chemistry is random:</strong> No correlation—dust and organics are independent</p>
+
+        <h3>1.7 Implications: Asteroids as &tau;-Life Delivery Systems</h3>
+        <p>Bennu proves that:</p>
+        <ul>
+          <li><strong>All RNA components</strong> existed in the early solar system</li>
+          <li><strong>&tau;-storage molecules</strong> (ribose, glucose) formed naturally in asteroids</li>
+          <li><strong>&tau;-cycling scaffolds</strong> (polymers) emerged before liquid water</li>
+          <li><strong>&tau;-density gradients</strong> (supernova enrichment) may drive molecular organization</li>
+        </ul>
+        <p>Earth didn't have to invent life's ingredients from scratch. <strong>Asteroids delivered &tau;-life precursors.</strong> The question isn't "how did life start on Earth?" but "where else did these same precursors land, and what happened there?"</p>
       </section>
 
-      <section id="conclusion"><h2>7. Conclusion</h2>
-        <p>
-          Life is a phenomenon of τ flux, not carbon. Wherever sustained, ordered matter–energy transformations exist with replication, τ-life may emerge—even in silicon deserts, sulfur seas, or plasma vortices.
-        </p>
+      <section id="part2"><h2>Part 2: Where Else Could &tau;-Life Emerge?</h2>
+        
+        <h3>2.1 Defining &tau;-Life</h3>
+        <p>Life is not carbon. Life is not DNA. Life is <strong>sustained ordered &tau;-flux</strong>. Any system that maintains:</p>
+        <ul>
+          <li>Continuous mass-energy cycling from gradients</li>
+          <li>Storage mechanisms for temporal charge</li>
+          <li>Replication with variation</li>
+        </ul>
+        <p>...qualifies as &tau;-life, regardless of substrate.</p>
+
+        <h3>2.2 Silicon-Based &tau;-Life</h3>
+        <p>Silicon can form four bonds like carbon, but prefers oxygen-rich compounds (SiO₂). On Earth, water dissolves silicon chains. But in <strong>high-temperature or non-aqueous environments</strong>, silicon could form stable &tau;-cycling scaffolds.</p>
+        <p><strong>Candidate worlds:</strong></p>
+        <ul>
+          <li>Hot, dry exoplanets with silicon-rich crusts</li>
+          <li>Venus-like atmospheres (sulfuric acid solvents)</li>
+          <li>Subsurface lava tubes on rocky planets</li>
+        </ul>
+        <p><strong>Test:</strong> Lab synthesis of silicon chains in non-aqueous solvents (liquid ammonia, sulfuric acid). Check if they support &tau;-storage and polymerization.</p>
+
+        <h3>2.3 Sulfur & Metal Redox &tau;-Life</h3>
+        <p>Earth microbes already use sulfur, iron, and manganese for metabolism. Entire &tau;-biospheres could run on:</p>
+        <ul>
+          <li>S⁰/S²⁻ cycling (sulfur oxidation/reduction)</li>
+          <li>Fe²⁺/Fe³⁺ cycling (iron oxidation/reduction)</li>
+          <li>Mn²⁺/Mn⁴⁺ cycling (manganese oxidation/reduction)</li>
+        </ul>
+        <p><strong>Candidate worlds:</strong></p>
+        <ul>
+          <li><strong>Europa, Enceladus</strong> — subsurface oceans with sulfur-rich hydrothermal vents</li>
+          <li><strong>Io</strong> — active sulfur volcanism</li>
+          <li><strong>Mars subsurface</strong> — iron-rich ancient aquifers</li>
+        </ul>
+        <p><strong>Test:</strong> Analyze plume compositions from Europa/Enceladus. Look for <strong>redox disequilibria</strong>—sulfur/iron species in ratios inconsistent with equilibrium chemistry, suggesting &tau;-flux cycling.</p>
+
+        <h3>2.4 Ammonia/Methane Solvent &tau;-Life</h3>
+        <p>Water isn't the only solvent. <strong>Liquid ammonia</strong> (NH₃) or <strong>liquid methane</strong> (CH₄) could support &tau;-life at much lower temperatures. On Titan:</p>
+        <ul>
+          <li>Surface lakes of liquid methane/ethane</li>
+          <li>Subsurface ammonia-water ocean</li>
+          <li>Nitrogen/hydrogen chemistry dominant</li>
+        </ul>
+        <p>&tau;-flux would be <strong>slower</strong> (lower temperatures = slower reactions), but chemically stable over billions of years.</p>
+        <p><strong>Test:</strong> Dragonfly mission to Titan (2034) should look for <strong>unexpected CH₄ depletion</strong> or <strong>N-based polymer chains</strong> in lake sediments.</p>
+
+        <h3>2.5 Plasma &tau;-Life</h3>
+        <p>In stars, planetary magnetospheres, or ionospheres, ionized matter forms <strong>plasmoids</strong>—self-organizing electromagnetic structures. If plasmoids can maintain coherence, replicate, and exchange &tau; via electromagnetic flows, they qualify as &tau;-life.</p>
+        <p><strong>Candidate environments:</strong></p>
+        <ul>
+          <li>Solar corona (Sun's outer atmosphere)</li>
+          <li>Jupiter's magnetosphere</li>
+          <li>Stellar atmospheres of red giants</li>
+        </ul>
+        <p><strong>Test:</strong> Look for <strong>non-random plasma instabilities</strong>—coherent structures that persist longer than thermodynamic timescales predict, suggesting &tau;-flux organization.</p>
+
+        <h3>2.6 Exotic Condensed-Matter &tau;-Life</h3>
+        <p>Hypothetical &tau;-life in extreme states of matter:</p>
+        <ul>
+          <li><strong>Superconducting lattices</strong> — &tau; exchange via Cooper pairs (zero-resistance electron flow)</li>
+          <li><strong>Bose-Einstein condensates</strong> — &tau; flux via quantum coherence across macroscopic scales</li>
+          <li><strong>Quark-gluon plasma</strong> — &tau;-life in the first microseconds after the Big Bang (?)</li>
+        </ul>
+        <p>These are speculative, but the framework allows them. If a system supports sustained, ordered &tau;-flux with replication, it's alive by definition.</p>
+
+        <h3>2.7 Threshold Conditions for &tau;-Life</h3>
+        <p>For any substrate, &tau;-life requires:</p>
+        <table>
+          <tr>
+            <th>Condition</th>
+            <th>Requirement</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Free-energy gradient</td>
+            <td>Sustained &tau;-flux source</td>
+            <td>Sunlight, chemical redox, heat flow</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>&tau;-storage and transfer</td>
+            <td>Solvent (water, ammonia), fields (EM), lattices (superconductors)</td>
+          </tr>
+          <tr>
+            <td>Replication</td>
+            <td>Copying &tau;-patterns with variation</td>
+            <td>RNA, crystal defects, plasmoid fission</td>
+          </tr>
+        </table>
+
+        <h3>2.8 Detection Strategy</h3>
+        <p>To detect &tau;-life beyond Earth:</p>
+        <ol>
+          <li><strong>Measure disequilibria</strong> — chemical or physical states inconsistent with equilibrium</li>
+          <li><strong>Look for organization</strong> — patterns, structures, or cycles that persist against entropy</li>
+          <li><strong>Test for replication</strong> — do structures copy themselves over time?</li>
+        </ol>
+        <p>Traditional biosignatures (oxygen, methane, phosphine) are Earth-centric. <strong>&tau;-flux signatures</strong> are universal.</p>
+      </section>
+
+      <section id="conclusion"><h2>Conclusion</h2>
+        <p>Bennu delivered ribose, glucose, and polymers—&tau;-life precursors—to the early solar system. These molecules didn't arise on Earth; they came from space, forged in asteroids enriched with supernova dust.</p>
+        <p>Life is not a carbon phenomenon. It's a <strong>&tau;-flux phenomenon</strong>. Wherever sustained, ordered mass-energy transformations occur with replication, life can emerge—in silicon deserts, sulfur seas, methane lakes, plasma vortices, or states of matter we haven't imagined yet.</p>
+        <p>The question NASA's Bennu samples answer: <strong>Are life's ingredients universal?</strong></p>
+        <p>Yes.</p>
+        <p>The question they raise: <strong>Where else are those ingredients building life right now?</strong></p>
       </section>
 
       <section id="references"><h2>References</h2>
         <ol>
+          <li>Furukawa, Y. et al. (2025). <em>Sugars essential to life in samples from asteroid Bennu</em>, Nature Geoscience.</li>
+          <li>Sandford, S. et al. (2025). <em>Nitrogen-oxygen rich polymers in Bennu samples</em>, Nature Astronomy.</li>
+          <li>Nguyen, A. et al. (2025). <em>Abundant supernova dust in asteroid Bennu</em>, Nature Astronomy.</li>
           <li>Schulze-Makuch & Irwin (2006). <em>Life in the Universe: Expectations and Constraints</em>.</li>
           <li>Benner, S. A. (2010). <em>Defining Life</em>.</li>
           <li>McKay, C. (2016). <em>Life on Titan?</em></li>
-          <li>White, T. (2025). <em>Biological τ — Metabolism, Breath, and Neural Flux</em>.</li>
         </ol>
-      </section>
-
-      <section id="appendix-a"><h2>Appendix A — τ-Life Dictionary</h2>
-        <div class="equation">τ ≡ E/c³ ≡ m/c</div>
-        <div class="equation">τ_flux = Δm/c = ΔE/c³ per unit time</div>
-        <div class="equation">τ_density = τ_flux / system_mass</div>
-        <div class="equation">Threshold: τ_density ≥ critical value → self-organizing life</div>
-      </section>
-
-      <section id="appendix-b"><h2>Appendix B — Test Protocols (Checklist)</h2>
-        <h3>B.1 Detection of τ-Life</h3>
-        <table>
-          <tr><th>Environment</th><th>Test</th><th>Observable</th><th>Outcome</th></tr>
-          <tr>
-            <td>Titan</td>
-            <td>Mass spectrometry of methane lakes</td>
-            <td>Unexpected CH₄ depletion or N-based chains</td>
-            <td>Possible τ flux cycles</td>
-          </tr>
-          <tr>
-            <td>Europa/Enceladus</td>
-            <td>Subsurface plume analysis</td>
-            <td>Redox disequilibria (S, Fe)</td>
-            <td>τ cycling signatures</td>
-          </tr>
-          <tr>
-            <td>Stars</td>
-            <td>Plasma instabilities</td>
-            <td>Self-organizing coherent plasmoids</td>
-            <td>Non-random τ flux structures</td>
-          </tr>
-        </table>
-
-        <h3>B.2 Lab Analogues</h3>
-        <table>
-          <tr><th>Experiment</th><th>Procedure</th><th>Outcome</th></tr>
-          <tr>
-            <td>Silicon chain synthesis</td>
-            <td>Create Si–Si networks in non-aqueous solvents</td>
-            <td>Check τ storage and replication potential</td>
-          </tr>
-          <tr>
-            <td>Plasma toroids</td>
-            <td>Sustain electromagnetic plasmoids in chambers</td>
-            <td>Measure τ flux and persistence</td>
-          </tr>
-        </table>
-
-        <h3>B.3 Reporting</h3>
-        <ul>
-          <li>Express findings in τ units (τ flux, τ density)</li>
-          <li>Compare to Earth τ-life thresholds</li>
-          <li>Seek evidence of replication and τ conservation</li>
-        </ul>
       </section>
     </main>
 
-    <footer>© <span id="y"></span> Tristan White • Creative Commons BY-NC-SA 4.0</footer>
+    <footer>
+      <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--rule);text-align:center;">
+        <strong>Explore:</strong>
+        <a href="https://time.plnt.earth" style="color:var(--link)">&tau; Framework</a> ·
+        <a href="https://zeta.plnt.earth" style="color:var(--link)">&zeta; Regularization</a>
+      </div>
+      <div style="margin-top:16px;">
+        &copy; 2025 · Creative Commons BY-NC-SA 4.0
+      </div>
+    </footer>
+
   </div>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+```
